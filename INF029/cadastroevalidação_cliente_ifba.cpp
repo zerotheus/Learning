@@ -75,11 +75,11 @@ int validadata()
 int validacpf() // seguir regra da receita
 {
   int i, dgtverificador1, dgtverificador2, resto, calc=0, valid = 0;
-  dgtverificador1 = static_cast<int>(cliente.cpf[9] - 48);
-  dgtverificador2 = static_cast<int>(cliente.cpf[10] - 48);
+  dgtverificador1 = cliente.cpf[9] - 48;
+  dgtverificador2 = cliente.cpf[10] - 48;
   for (i = 0; i < 11; i++)
   {
-    cliente.cpfinteiro[i] = static_cast<int>(cliente.cpf[i] - 48); // converte o valor absoluto do char em inteiro//
+    cliente.cpfinteiro[i] = cliente.cpf[i] - 48; // converte o valor absoluto do char em inteiro//
   }
   for (i = 0; i < 9; i++)
   {

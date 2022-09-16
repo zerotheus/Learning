@@ -23,7 +23,7 @@ int sort(int arr[], int n)
 
 int main()
 {
-  int i, n = 7;
+  int i, n = 10;
   int arr[n];
   for (i = 0; i < n; i++)
   {
